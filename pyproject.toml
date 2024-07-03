@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ratekit"
+description = "Python package for the processing and classification of billing tickets."
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Cameron Fazakerley", email = "moose@nommumail.co.uk" }
+]
+requires-python = ">=3.8"
+dependencies = [
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent"
+]
+dynamic = ["version"]
+
+[project.urls]
+"Homepage" = "https://github.com/nommu-moose/ratekit"
+"Bug Tracker" = "https://github.com/nommu-moose/ratekit/issues"
+
+[project.scripts]
+
+[tool.hatch.version]
+path = "src/ratekit/__init__.py"
+
+[tool.hatch.metadata]
+dynamic = ["version"]
